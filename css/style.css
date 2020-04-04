@@ -86,7 +86,7 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
-    color: #fff;
+    color: rgb(255, 255, 255);
     text-align: center;
     background: url("../assets/wrapAbout.jpg");
 }
@@ -96,47 +96,31 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
-    color: #fff;
+    color: rgb(0, 0, 0);
     text-align: center;
     background: url("../assets/wrapAddTask.jpg");
 }
 
 header {
     display: grid;
-    grid-template-columns: 140px;
-    justify-content: flex-start;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;
     box-shadow: 0 0.5em 1em #111;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 900;
     width: 100%;
-}
-
-header label a {
-    color: #ffffff;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 4.25em;
-    font-size: 1em;
-    font-weight: bold;
-    padding: 0 1em;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.877);
+    height: 68px;
 }
 
 @media (max-width: 1200px) {
     header {
         display: grid;
-        grid-template-columns: 100px;
         box-shadow: 0 0.2em 0.6em #111;
+        font-size: 8px;
+        height: 40px;
     }
-    header label a {
-        font-size: 10px;
-    }
-}
-
-header label:hover {
-    background: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -849,10 +833,134 @@ main {
     grid-template-areas: "sumTask" "horseTask";
 }
 
+.anim-beg {
+    grid-area: horseTask;
+    justify-content: center;
+    transform: translate(30px, 0px);
+    z-index: 200;
+}
+
+.anim-bar {
+    grid-area: horseTask;
+    justify-content: center;
+    animation: go-left 0.8s infinite;
+    z-index: 300;
+}
+
+@keyframes go-left {
+    0% {
+        transform: translate(40px, 0px);
+    }
+    100% {
+        transform: translate(-150px, 0px);
+    }
+}
+
+@media (max-width: 800px) {
+    .anim-beg {
+        margin-top: 20px;
+        width: 90px;
+    }
+    .anim-bar {
+        width: 35px;
+    }
+}
+
+@media (min-width: 800px) {
+    .anim-beg {
+        margin-top: 40px;
+    }
+    .anim-bar {
+        width: 50px;
+    }
+}
+
 .taskSum {
     grid-area: sumTask;
     background-color: rgba(255, 255, 255, 0.795);
     margin-bottom: 4px;
+    margin-top: 20px;
+}
+
+form {
+    justify-self: center;
+    font-size: 18px;
+    margin-top: 10%;
+}
+
+form span {
+    font-size: 30px;
+}
+
+header form {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+header form input {
+    color: white;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid rgb(80, 63, 126);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.877);
+    height: 100%;
+    width: 100%;
+}
+
+#phpBG {
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    /* background: linear-gradient(45deg, rgb(51, 53, 172), rgb(157, 122, 255)); */
+}
+
+@media (min-width: 800px) {
+    header form input {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 800px) and (min-width: 400px) {
+    header form input {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 400px) {
+    header form input {
+        font-size: 7px;
+    }
+}
+
+.number {
+    text-align: center;
+    border: 1px solid #383838;
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 14px;
+    width: 160px;
+    box-shadow: inset 0px 20px 20px rgba(255, 255, 255, 0.918);
+}
+
+.submit {
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #383838;
+    background: #f6f6f6;
+    box-shadow: inset 0px 20px 20px rgba(185, 162, 250, 0.918);
+    border-radius: 8px;
+    padding: 10px 14px;
+    width: 160px;
+}
+
+.submit:hover {
+    box-shadow: inset 0px -20px 20px rgba(181, 162, 250, 0.918);
+}
+
+.submit:active {
+    margin-top: 1px;
+    margin-bottom: -1px;
+    zoom: 1;
 }
 
 @media (max-width: 1200px) {
