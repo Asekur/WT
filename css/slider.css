@@ -199,6 +199,11 @@ footer {
     justify-self: right;
 }
 
+.arrow-Three {
+    grid-area: centerSide;
+    justify-self: center;
+}
+
 .arrow span {
     display: block;
     position: absolute;
@@ -217,6 +222,11 @@ footer {
 .arrow-Two span {
     border-bottom: 4px solid rgb(73, 184, 204);
     border-right: 4px solid rgb(89, 143, 223);
+}
+
+.arrow-Three span {
+    border-bottom: 4px solid rgb(204, 110, 73);
+    border-right: 4px solid rgb(235, 75, 75);
 }
 
 .arrow span a {

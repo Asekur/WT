@@ -951,6 +951,15 @@ main form input {
     box-shadow: inset 0px 20px 20px rgba(255, 255, 255, 0.918);
 }
 
+form textarea {
+    width: 160px;
+    resize: none;
+    border-radius: 8px;
+    padding: 10px 14px;
+    border: 1px solid #383838;
+    box-shadow: inset 0px 20px 20px rgba(255, 255, 255, 0.918);
+}
+
 .submit {
     cursor: pointer;
     font-size: 16px;
@@ -977,6 +986,9 @@ main form input {
         margin-left: 10%;
         margin-right: 10%;
         border-radius: 15%;
+    }
+    form textarea {
+        height: 44px;
     }
 }
 
