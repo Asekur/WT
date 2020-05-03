@@ -13,9 +13,10 @@
 </head>
 
 <body class="body-competitions">
+    <?php require_once("userHistory.php");?>
     <div class="wrap-competitions">
         <header class="header-competitions">
-        <?php include "menuOutput.php"; ?>
+            <?php include "menuOutput.php"; ?>
         </header>
         <main>
             <div class="main-competitions">

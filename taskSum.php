@@ -13,6 +13,7 @@
 </head>
 
 <body class="body-taskSum">
+    <?php require_once("userHistory.php");?>
     <div class="wrap-addTask">
         <header class="header-addTask">
             <?php include "menuOutput.php"; ?>

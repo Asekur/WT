@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <?php require_once("userHistory.php");?>
     <div class="wrap">
         <header>
             <label for="slide-1">ABOUT US</label>
@@ -77,6 +78,9 @@
                 </div>
                 <div class="arrow-Four">
                     <span><a href="taskSQL.php"></a></span>
+                </div>
+                <div class="arrow-Five">
+                    <span><a href="taskStory.php"></a></span>
                 </div>
             </div>
         </footer>
