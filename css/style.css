@@ -882,7 +882,91 @@ main {
     margin-top: 20px;
 }
 
-form {
+.taskSQL {
+    display: grid;
+    grid-area: sumTask;
+}
+
+.twoDB {
+    grid-area: twoDB;
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 94%;
+}
+
+.yearDB {
+    grid-area: yearDB;
+    background-color: rgba(255, 255, 255, 0.795);
+    width: 94%;
+}
+
+@media (max-width: 800px) {
+    .taskSQL {
+        grid-template-areas: "twoDB" "yearDB";
+        grid-template-rows: 50% 50%;
+        margin: 0;
+    }
+    .twoDB {
+        height: 98%;
+        margin: 0 3% 2% 3%;
+        border-radius: 4%;
+        font-size: 6px;
+    }
+    .yearDB {
+        height: 98%;
+        margin: 2% 3% 0 3%;
+        border-radius: 4%;
+        font-size: 11px;
+    }
+    .dateYear {
+        font-size: 8px;
+        width: 110px;
+        height: 25px;
+    }
+    .yearDB .submit {
+        font-size: 8px;
+        width: 110px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 800px) {
+    .taskSQL {
+        grid-template-areas: "twoDB yearDB";
+        grid-template-columns: 50% 50%;
+        margin-top: 20px;
+    }
+    .twoDB {
+        height: 100%;
+        margin: 0 2% 0 4%;
+        padding-top: 6%;
+        border-radius: 6%;
+        font-size: 14px;
+    }
+    .yearDB {
+        height: 100%;
+        margin: 0 4% 0 2%;
+        border-radius: 6%;
+        font-size: 18px;
+    }
+    .dateYear {
+        border: 1px solid #383838;
+        font-size: 14px;
+        box-shadow: inset 0px 20px 20px rgba(255, 255, 255, 0.918);
+    }
+}
+
+table {
+    border: 1px solid grey;
+    width: 96%;
+    margin: 0 2% 0 2%;
+    justify-self: center;
+}
+
+td {
+    border: 1px solid grey;
+}
+
+form:not([class]) {
     justify-self: center;
     font-size: 18px;
     margin-top: 10%;
@@ -911,7 +995,6 @@ header form input {
 #phpBG {
     color: white;
     background: rgba(0, 0, 0, 0.5);
-    /* background: linear-gradient(45deg, rgb(51, 53, 172), rgb(157, 122, 255)); */
 }
 
 @media (min-width: 800px) {
