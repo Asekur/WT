@@ -927,6 +927,20 @@ main {
         width: 110px;
         height: 25px;
     }
+    .twoDB span {
+        font-size: 8px;
+    }
+    .twoDB input {
+        width: 110px;
+        font-size: 8px;
+    }
+    .taskSum span {
+        font-size: 11px;
+    }
+    .taskSQL textarea {
+        width: 110px;
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 800px) {

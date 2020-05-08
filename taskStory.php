@@ -22,7 +22,8 @@
             <div class="main-addTask">
                 <div class="taskSQL">
                     <form class="twoDB" method="POST">
-                        Your text mail:<br> <textarea name="message" placeholder="Tap here your message"></textarea><br>
+                        <br> Your text mail:<br> <textarea name="message"
+                            placeholder="Tap here your message"></textarea><br>
                         <br>
                         <input type="submit" class="submit" name="submitMail" value="Send Message"> <br> <br> <br>
                         <?php require_once("sendMail.php");?>

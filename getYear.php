@@ -41,6 +41,6 @@ if (isset($_POST['submit']) && isset($_POST['year']))
         }
         mysqli_free_result($result);
     }
+    mysqli_close($mysql);
 }
-mysqli_close($mysql);
 ?>
