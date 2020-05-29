@@ -66,9 +66,12 @@
         </main>
         <footer>
             <div class="arrow">
-                <span><a href="taskSum.php"></a></span>
-                <span><a href="taskSum.php"></a></span>
-                <span><a href="taskSum.php"></a></span>
+                <div class="arrow-One">
+                    <span><a href="taskSum.php"></a></span>
+                </div>
+                <div class="arrow-Two">
+                    <span><a href="taskDeliver.php"></a></span>
+                </div>
             </div>
         </footer>
     </div>

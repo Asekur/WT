@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" href="assets/horse_ksk.ico" type="images/x-icon" />
-    <title>Get amound of numbers</title>
+    <title>Get deliver date</title>
 </head>
 
 <body class="body-taskSum">
@@ -21,9 +21,13 @@
             <div class="main-addTask">
                 <div class="taskSum">
                     <form method="POST">
-                        Number:<br> <input type="text" class="number" name="number" value=0 /><br> <br>
-                        <input type="submit" class="submit" name="submit" value="Get result"> <br> <br> <br>
-                        Total: <br> <span><?php require_once("implementationTask.php");?></span><br>
+                        Date:<br> <input type="date" class="date" name="date" value="<?php echo date("Y-m-d");?>"
+                            min="<?php echo date("Y-m-d");?>"
+                            max="<?php $time = strtotime("+6 month"); echo date("Y-m-d", $time);?>"><br>
+                        <br>
+                        <input type="submit" class="submit" name="submit" value="Get date"> <br> <br> <br>
+                        Delivery date: <br>
+                        <span><?php require_once("deliveryDate.php");?></span><br>
                     </form>
                 </div>
                 <div class="animate">
