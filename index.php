@@ -72,6 +72,9 @@
                 <div class="arrow-Two">
                     <span><a href="taskDeliver.php"></a></span>
                 </div>
+                <div class="arrow-Three">
+                    <span><a href="taskRegular.php"></a></span>
+                </div>
             </div>
         </footer>
     </div>
