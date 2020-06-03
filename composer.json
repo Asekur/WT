@@ -1,0 +1,13 @@
+{
+    "name": "lab7",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [{
+        "name": "",
+        "email": "email@example.com"
+    }],
+    "require": {
+        "phpmailer/phpmailer": "v6.1.5"
+    }
+}
