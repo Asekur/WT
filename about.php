@@ -13,6 +13,7 @@
 </head>
 
 <body class="body-about">
+    <?php require_once("userHistory.php");?>
     <div class="wrap-about">
         <header class="header-about">
             <?php include "menuOutput.php"; ?>

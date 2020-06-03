@@ -204,6 +204,16 @@ footer {
     justify-self: center;
 }
 
+.arrow-Four {
+    grid-area: leftSide;
+    justify-self: center;
+}
+
+.arrow-Five {
+    grid-area: rightSide;
+    justify-self: center;
+}
+
 .arrow span {
     display: block;
     position: absolute;
@@ -227,6 +237,16 @@ footer {
 .arrow-Three span {
     border-bottom: 4px solid rgb(204, 110, 73);
     border-right: 4px solid rgb(235, 75, 75);
+}
+
+.arrow-Four span {
+    border-bottom: 4px solid rgb(130, 73, 204);
+    border-right: 4px solid rgb(118, 75, 235);
+}
+
+.arrow-Five span {
+    border-bottom: 4px solid rgb(255, 151, 203);
+    border-right: 4px solid rgb(245, 150, 253);
 }
 
 .arrow span a {

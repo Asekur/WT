@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html-news" lang="en">
+<html class="html-taskSum" lang="en">
 
 <head>
     <meta charset="UTF-8" />
@@ -9,31 +9,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="icon" href="assets/horse_ksk.ico" type="images/x-icon" />
-    <title>News</title>
+    <title>Get data bases</title>
 </head>
 
-<body class="body-news">
+<body class="body-taskSum">
     <?php require_once("userHistory.php");?>
-    <div class="wrap-news">
-        <header class="header-news">
+    <div class="wrap-addTask">
+        <header class="header-addTask">
             <?php include "menuOutput.php"; ?>
         </header>
         <main>
-            <div class="main-news">
-                <div class="one-news">
-                    <a class="c-preview">
-                        <div class="c-preview__img-one"></div>
-                    </a>
+            <div class="main-addTask">
+                <div class="taskSQL">
+                    <form class="twoDB" method="POST">
+                        <?php require_once("twoDBTask.php");?>
+                    </form>
+                    <form class="yearDB" method="POST">
+                        <br>Year:<br> <input type="date" class="dateYear" name="year"
+                            value="<?php echo date("Y-m-d");?>"
+                            min="<?php $time = strtotime("-4 year"); echo date("Y-m-d", $time);?>"
+                            max="<?php $time = strtotime("+3 year"); echo date("Y-m-d", $time);?>" /><br> <br>
+                        <input type="submit" class="submit" name="submit" value="Get result"><br> <br>
+                        <?php require_once("getYear.php");?><br>
+                    </form>
                 </div>
-                <div class="two-news">
-                    <a class="c-preview">
-                        <div class="c-preview__img-two"></div>
-                    </a>
-                </div>
-                <div class="three-news">
-                    <a class="c-preview">
-                        <div class="c-preview__img-three"></div>
-                    </a>
+                <div class="animate">
+                    <img class="anim-beg" src="../assets/beg.gif">
+                    <img class="anim-bar" src="../assets/barrier.png">
                 </div>
             </div>
         </main>

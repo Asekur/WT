@@ -13,9 +13,10 @@
 </head>
 
 <body class="body-contacts">
+    <?php require_once("userHistory.php");?>
     <div class="wrap-contacts">
         <header class="header-contacts">
-        <?php include "menuOutput.php"; ?>
+            <?php include "menuOutput.php"; ?>
         </header>
         <main>
             <div class="main-contacts">

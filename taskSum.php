@@ -13,17 +13,21 @@
 </head>
 
 <body class="body-taskSum">
+    <?php require_once("userHistory.php");?>
     <div class="wrap-addTask">
         <header class="header-addTask">
             <?php include "menuOutput.php"; ?>
         </header>
         <main>
             <div class="main-addTask">
-                <div class="taskSum">
-                    <form method="POST">
-                        Number:<br> <input type="text" class="number" name="number" value=0 /><br> <br>
+                <div class="taskSQL">
+                    <form class="twoDB" method="POST">
+                        <br> Number:<br> <input type="text" class="number" name="number" value=0 /><br> <br>
                         <input type="submit" class="submit" name="submit" value="Get result"> <br> <br> <br>
                         Total: <br> <span><?php require_once("implementationTask.php");?></span><br>
+                    </form>
+                    <form class="yearDB" method="POST">
+                        <?php require_once("getTable.php");?>
                     </form>
                 </div>
                 <div class="animate">
